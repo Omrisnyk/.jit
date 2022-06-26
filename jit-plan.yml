@@ -1,5 +1,6 @@
 name: My plan
 level: beginner
+update_id: c096c63e-f4db-4f46-a082-4b43141ed24f
 author: Jit
 version: 0.1
 owners:
@@ -9,8 +10,7 @@ references:
 tags: []
 items:
   - name: Scan code for vulnerabilities
-    uses: >-
-      jitsecurity-controls/jit-plans/items/code/item-code-vulnerability.yml@latest
+    uses: jitsecurity-controls/jit-plans/items/code/item-code-vulnerability.yml@latest
   - name: Scan code dependencies for vulnerabilities
     uses: jitsecurity-controls/jit-plans/items/code/item-dependency-check.yml@latest
   - name: Scan code for hard-coded secrets
