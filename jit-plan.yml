@@ -1,5 +1,6 @@
 name: My plan
 level: beginner
+update_id: ac1291d0-d2f9-4e63-ab7d-fce3ebdfec5b
 author: Jit
 version: 0.1
 owners:
@@ -8,16 +9,13 @@ references:
   - https://www.jit.io
 tags: []
 items:
+  - name: Require Branch Protection for SCM
+    uses: jitsecurity-controls/jit-plans/items/third_party_app/item-branch-protection-scm.yml@latest
   - name: Scan code for vulnerabilities
-    uses: >-
-      jitsecurity-controls/jit-plans/items/code/item-code-vulnerability.yml@latest
+    uses: jitsecurity-controls/jit-plans/items/code/item-code-vulnerability.yml@latest
+  - name: Scan container images
+    uses: jitsecurity-controls/jit-plans/items/infrastructure/item-container-scan.yml@latest
   - name: Scan code dependencies for vulnerabilities
     uses: jitsecurity-controls/jit-plans/items/code/item-dependency-check.yml@latest
   - name: Scan code for hard-coded secrets
     uses: jitsecurity-controls/jit-plans/items/code/item-secret-detection.yml@latest
-  - name: Require Branch Protection for SCM
-    uses: >-
-      jitsecurity-controls/jit-plans/items/third_party_app/item-branch-protection-scm.yml@latest
-  - name: Scan container images
-    uses: >-
-      jitsecurity-controls/jit-plans/items/infrastructure/item-container-scan.yml@latest
